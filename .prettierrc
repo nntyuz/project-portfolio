@@ -1,0 +1,13 @@
+{
+  "useTabs": false,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "semi": false,
+  "trailingComma": "es5",
+  "pugFramework": "vue",
+  "pugSingleQuote": false,
+  "pugAttributeSeparator": "none",
+  "pugClosingBracketPosition": "last-line"
+}

@@ -1,0 +1,17 @@
+html, body {
+  @apply text-dark;
+  height: 100%;
+  width: 100%;
+  min-width: 375px;
+  font-family: "Songer", Arial, Helvetica, sans-serif;
+}
+#__nuxt {
+  height: 100%;
+  width: 100%;
+}
+.w-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+}
