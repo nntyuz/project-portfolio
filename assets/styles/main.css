@@ -1,13 +1,8 @@
 @import 'utils';
 html,
 body {
-  @apply text-dark;
-  height: 100%;
-  width: 100%;
-  min-width: 375px;
-  font-family: 'Body Grotesque', Arial, Helvetica, sans-serif;
+  @apply h-full w-full min-w-375px font-body-grotesque;
 }
 #__nuxt {
-  height: 100%;
-  width: 100%;
+  @apply h-full w-full;
 }
