@@ -23,8 +23,17 @@ export default defineConfig({
       xxs: '460px',
     },
     colors: {
+      'accent-dark': '#262626',
+      'accent-light': '#f1f1f1',
+      'accent-blue': '#001BEB',
+      'accent-red': '#FF695E',
+      'accent-yellow': '#F9A826',
+      'accent-purple': '#6C63FF',
       'accent-sand': '#b7ab98',
-      'accent-red': '#E73C37'
+    },
+    fontFamily: {
+      mak: ['"Mak"', 'Arial', 'Helvetica', 'sans-serif'],
+      'body-grotesque': ['"Body Grotesque"', 'Arial', 'Helvetica', 'sans-serif'],
     },
   },
   transformers: [transformerDirectives()],
