@@ -10,5 +10,9 @@ module.exports = {
   },
   extends: ['@nuxtjs/eslint-config-typescript', 'plugin:prettier/recommended'],
   plugins: [],
-  rules: {},
+  rules: {
+    'no-console': 'off',
+    camelcase: 'off',
+    'vue/require-default-prop': 'off',
+  },
 }

@@ -1,0 +1,24 @@
+.w-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+}
+.font {
+  &-mak {
+    font-family: 'Mak', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+  &-mak-bold {
+    font-family: 'Mak', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  &.body-bold {
+    font-family: 'Body Grotesque', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  &.body-extrabold {
+    font-family: 'Body Grotesque', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+  }
+}
