@@ -29,3 +29,11 @@
     url('../fonts/body-grotesque/body-extrabold.woff') format('woff');
   font-display: swap;
 }
+@font-face {
+  font-weight: 800;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  src: url('../fonts/neue-machina/neue-machina-bold.woff2') format('woff2'),
+    url('../fonts/neue-machina/neue-machina-bold.woff') format('woff');
+  font-display: swap;
+}

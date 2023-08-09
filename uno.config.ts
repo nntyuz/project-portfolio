@@ -34,6 +34,7 @@ export default defineConfig({
     fontFamily: {
       mak: ['"Mak"', 'Arial', 'Helvetica', 'sans-serif'],
       'body-grotesque': ['"Body Grotesque"', 'Arial', 'Helvetica', 'sans-serif'],
+      'neue-machina': ['"Neue Machina"', 'Arial', 'Helvetica', 'sans-serif'],
     },
   },
   transformers: [transformerDirectives()],

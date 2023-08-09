@@ -1,7 +1,7 @@
 @import 'utils';
 html,
 body {
-  @apply h-full w-full min-w-375px font-body-grotesque;
+  @apply h-full w-full min-w-375px font-neue-machina text-16px leading-22px;
 }
 #__nuxt {
   @apply h-full w-full;
