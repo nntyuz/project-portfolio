@@ -14,22 +14,6 @@
   font-display: swap;
 }
 @font-face {
-  font-weight: 700;
-  font-family: 'Body Grotesque';
-  font-style: normal;
-  src: url('../fonts/body-grotesque/body-bold.woff2') format('woff2'),
-    url('../fonts/body-grotesque/body-bold.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-weight: 800;
-  font-family: 'Body Grotesque';
-  font-style: normal;
-  src: url('../fonts/body-grotesque/body-extrabold.woff2') format('woff2'),
-    url('../fonts/body-grotesque/body-extrabold.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
   font-weight: 800;
   font-family: 'Neue Machina';
   font-style: normal;

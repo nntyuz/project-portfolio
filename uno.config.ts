@@ -1,7 +1,6 @@
 import { defineConfig } from 'unocss'
 import { presetUno, presetIcons } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
-
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 
 export default defineConfig({
@@ -10,6 +9,9 @@ export default defineConfig({
     presetIcons({
       collections: {
         custom: FileSystemIconLoader('./assets/icons'),
+      },
+      extraProperties: {
+        color: '',
       },
     }),
   ],
@@ -33,7 +35,6 @@ export default defineConfig({
     },
     fontFamily: {
       mak: ['"Mak"', 'Arial', 'Helvetica', 'sans-serif'],
-      'body-grotesque': ['"Body Grotesque"', 'Arial', 'Helvetica', 'sans-serif'],
       'neue-machina': ['"Neue Machina"', 'Arial', 'Helvetica', 'sans-serif'],
     },
   },
