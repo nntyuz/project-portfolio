@@ -1,9 +1,0 @@
-.w-container {
-  @apply my-0 mx-auto max-w-1200px py-0 px-20px w-full;
-}
-.padding-1 {
-  @apply py-60px;
-}
-.text-accent {
-  @apply font-mak font-bold text-accent-purple;
-}
