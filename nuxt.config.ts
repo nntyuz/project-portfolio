@@ -7,9 +7,7 @@ export default defineNuxtConfig({
       'postcss-nested': {},
     },
   },
-  modules: [
-    '@unocss/nuxt',
-  ],
+  modules: ['@unocss/nuxt'],
   components: {
     dirs: [
       {
