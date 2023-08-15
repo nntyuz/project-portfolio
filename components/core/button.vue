@@ -1,6 +1,4 @@
 <script setup>
-import { computed, defineProps, defineEmits } from 'vue'
-
 const props = defineProps({
   type: {
     type: String,
@@ -38,11 +36,11 @@ const classes = computed(() => {
   @apply w-max h-auto rounded-8px;
   &.type {
     &-main {
-      @apply bg-accent-dark text-white border border-transparent transition ease-in hover:bg-white hover:color-accent-dark hover:border-accent-dark;
+      @apply bg-accent-dark text-accent-light border border-transparent transition ease-in hover:bg-accent-light hover:color-accent-dark hover:border-accent-dark;
     }
 
     &-secondary {
-      @apply bg-accent-purple text-white border border-transparent transition ease-in hover:bg-white hover:text-accent-purple hover:border-accent-purple;
+      @apply bg-accent-purple text-accent-light border border-transparent transition ease-in hover:bg-accent-light hover:text-accent-purple hover:border-accent-purple;
     }
   }
 
@@ -70,7 +68,7 @@ const classes = computed(() => {
     }
   }
   &.disabled {
-    @apply pointer-events-none bg-white border-white color-accent-dark;
+    @apply pointer-events-none bg-accent-light border-accent-light color-accent-dark;
   }
 }
 </style>
