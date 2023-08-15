@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted, ref } from 'vue'
-
 const delay = ref(15)
 const revisedMousePosX = ref(0)
 const revisedMousePosY = ref(0)
@@ -8,7 +6,7 @@ const mousePosX = ref(0)
 const mousePosY = ref(0)
 
 onMounted(() => {
-  if (window.innerWidth >= 960) {
+  if (window.innerWidth > 960) {
     document.onmousemove = (e) => {
       mousePosX.value = e.pageX
       mousePosY.value = e.pageY
@@ -33,6 +31,6 @@ onMounted(() => {
 
 <style lang="postcss" scoped>
 #custom-cursor {
-  @apply absolute z-50 w-80px h-80px -mt-32px -ml-32px mr-0 mb-0 border border-black rounded-50% pointer-events-none;
+  @apply absolute z-50 w-80px h-80px -mt-32px -ml-32px mr-0 mb-0 border border-accent-dark rounded-50% pointer-events-none dark:border-accent-light lt-lg:hidden;
 }
 </style>
