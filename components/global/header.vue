@@ -19,8 +19,14 @@ const toggleTheme = () => {
 }
 const toggleMenu = () => {
   activeMenu.value = !activeMenu.value
-  document.body.classList.toggle('overflow-hidden')
 }
+watch(activeMenu, (value) => {
+  if (value) {
+    document.body.classList.add('overflow-hidden')
+  } else {
+    document.body.classList.remove('overflow-hidden')
+  }
+})
 onMounted(() => {
   if (localStorage.getItem('theme') === 'dark') {
     switchValue.value = false
@@ -38,7 +44,12 @@ onMounted(() => {
       class="w-container flex justify-between items-center"
       :class="{ 'active-menu': activeMenu }"
     >
-      <a href="#hero" class="text-accent text-14px leading-20px lt-xs:order-2">Maria Anikina</a>
+      <a
+        href="#hero"
+        class="text-accent text-14px leading-20px lt-xs:order-2"
+        @click="activeMenu = false"
+        >Maria Anikina</a
+      >
       <nav
         class="nav-wrapper w-max flex gap-40px text-14px leading-20px text-accent-dark relative overflow-hidden dark:text-accent-light lt-xs:hidden lt-xs:order-4"
       >
@@ -69,7 +80,7 @@ onMounted(() => {
 
 <style lang="postcss" scoped>
 .active-menu {
-  @apply h-100dvh grid grid-cols-3;
+  @apply h-120dvh grid grid-cols-3;
   .nav-wrapper {
     @apply w-full gap-20px flex flex-wrap items-center justify-center col-span-3 -mt-300px lt-xs:justify-between;
     .nav-links {
