@@ -1,9 +1,35 @@
 .w-container {
   @apply my-0 mx-auto max-w-1200px py-0 px-20px w-full;
 }
+
 .padding-1 {
-  @apply py-60px;
+  @apply py-60px lt-sm:py-40px;
 }
+
 .text-accent {
   @apply font-mak font-bold text-accent-purple;
+}
+
+.section-sub {
+  @apply tracking-widest text-14px leading-20px lt-sm:text-12px lt-sm:leading-16px;
+}
+
+.column-wrapper {
+  transition: all 700ms;
+  &::after {
+    transition: ease 700ms;
+  }
+  &:hover {
+    .title,
+    .sub,
+    .time {
+      @apply text-accent-light dark:text-accent-light;
+    }
+  }
+  .title {
+    @apply text-60px transition-all duration-500 lt-xxl:text-52px lt-sm:text-32px lt-xxs:text-26px;
+  }
+  .sub {
+    @apply text-12px max-w-300px transition-all duration-500 lt-sm:max-w-200px lt-xs:text-10px lt-xs:max-w-200px lt-xxs:max-w-150px;
+  }
 }

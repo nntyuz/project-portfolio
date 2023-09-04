@@ -16,12 +16,12 @@ const courses = [
 <template>
   <section class="courses-section">
     <div class="w-container flex flex-col gap-20px">
-      <h3 class="tracking-widest text-14px leading-20px">Курсы</h3>
+      <h3 class="section-sub">Курсы</h3>
       <p class="text-wrap">
         <span
           v-for="([item, color], index) in courses"
           :key="index"
-          class="text-accent-dark text-50px transition-all dark:text-accent-light"
+          class="text-accent-dark text-50px transition-all dark:text-accent-light lt-xxl:text-46px lt-sm:text-28px lt-xxs:text-20px"
           :class="color"
         >
           {{ item }}

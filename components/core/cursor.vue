@@ -31,6 +31,6 @@ onMounted(() => {
 
 <style lang="postcss" scoped>
 #custom-cursor {
-  @apply absolute z-50 w-80px h-80px -mt-32px -ml-32px mr-0 mb-0 border border-accent-dark rounded-50% pointer-events-none dark:border-accent-light lt-lg:hidden;
+  @apply absolute z-999 w-80px h-80px -mt-32px -ml-32px mr-0 mb-0 border border-accent-dark rounded-50% pointer-events-none dark:border-accent-light lt-lg:hidden;
 }
 </style>

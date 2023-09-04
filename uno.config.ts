@@ -17,12 +17,12 @@ export default defineConfig({
   ],
   theme: {
     breakpoints: {
-      xxl: '1280px',
-      xl: '1024px',
-      lg: '960px',
-      sm: '768px',
-      xs: '640px',
       xxs: '460px',
+      xs: '640px',
+      sm: '768px',
+      lg: '960px',
+      xl: '1024px',
+      xxl: '1280px',
     },
     colors: {
       'accent-dark': '#262626',

@@ -18,7 +18,7 @@ const percentage = computed(() => {
 
 <template>
   <div
-    class="relative w-86px h-86px border border-accent-purple conic flex items-center justify-center rounded-full after:absolute after:content-empty after:h-80px after:w-80px after:bg-accent-light after:rounded-full after:border after:border-accent-purple dark:after:bg-accent-dark"
+    class="relative w-86px h-86px border border-accent-purple conic flex items-center justify-center rounded-full after:absolute after:content-empty after:h-80px after:w-80px after:bg-accent-light after:rounded-full after:border after:border-accent-purple dark:after:bg-accent-dark lt-xs:w-70px lt-xs:h-70px lt-xs:after:h-64px lt-xs:after:w-64px lt-xs:text-14px"
     :style="degForCircle"
   >
     <div class="z-9">{{ percentage }}</div>
